@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🎁 Special Gift</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle, #000, #111);
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+    #box {
+        text-align: center;
+        padding: 40px;
+        border: 3px solid red;
+        box-shadow: 0 0 30px red;
+    }
+    button {
+        padding: 15px 35px;
+        font-size: 20px;
+        background: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0 15px red;
+    }
+    button:hover {
+        background: darkred;
+    }
+    #msg {
+        margin-top: 30px;
+        font-size: 50px;
+        font-weight: bold;
+        display: none;
+        color: red;
+        text-shadow: 0 0 20px red;
+    }
+</style>
+</head>
+<body>
+
+<div id="box">
+    <h2>🎉 You received a gift!</h2>
+    <button onclick="showGift()">🎁 Open Gift</button>
+    <div id="msg">F*CK&nbsp;&nbsp;U 😈</div>
+</div>
+
+<script>
+function showGift() {
+    document.getElementById("msg").style.display = "block";
+}
+</script>
+
+</body>
+</html>
